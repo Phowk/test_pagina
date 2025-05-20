@@ -1,0 +1,112 @@
+.wrapper {
+    display: grid;
+    gap: 20px; /* espacio entre los divs */
+    margin-left: 20px;
+}
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.65); 
+    width: 400px; 
+    height: 400px; 
+    border-radius: 30px; 
+    margin-left: 20px;
+    padding: 40px;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;     
+    height: 100px;
+    align-content: stretch;   
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+}
+
+.contenido {
+    font-size: 20px;
+    color: black;
+}
+
+.centrado {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: rgb(255, 210, 128);
+    border: 0px;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.boton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.boton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.boton:hover span {
+  padding-right: 25px;
+}
+
+.boton:hover {
+    background-color: rgb(255, 226, 172);
+    cursor: pointer;
+}
+
+.boton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.boton:active {
+    background-color: rgb(255, 240, 212);
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.boton-centro {
+    grid-column: 1 / -1; /* ocupa ambas columnas */
+    justify-self: center; /* lo centra dentro del área */
+}
