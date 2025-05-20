@@ -1,8 +1,7 @@
 .wrapper {
-    display: flex;
+    display: grid;
     gap: 20px; /* espacio entre los divs */
     margin-left: 20px;
-    align-items: stretch;
 }
 .contenedor {
     background-color: rgba(255, 255, 255, 0.65); 
@@ -102,7 +101,7 @@
 .botones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
     margin-top: 70px;
     margin-left: 30px;
 }
