@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body style="background-color: rgb(236, 216, 200);">
-    <h1 style="color: black; font-size: 40px; text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Hello, World!</h1>
-    <p style="font-size: 20px;">This is a simple HTML document.</p>
+    <div class ="fondo" style="width: 100%;"><img src="naturaleza.jpg" alt="naturaleza" width="200%" height="300%" style="object-fit: cover; width: 100%;"></div>
+    <h1 style="color: white; font-size: 40px; text-align: center; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Hello, World!</h1>    
     <div class="wrapper">
-        <div class="contenedor">
+        <div class="contenedor" style="height: auto;">
             <!-- Contenedor superior con texto e imagen alineados -->
             <div class="top">
               <div class="titulo">Título...</div>
@@ -18,15 +19,27 @@
             </div>
         
             <!-- Contenido que va debajo -->
-            <div class="contenido">
+            <div class="contenido"> 
                 Nombre:
                 <br><br><br>
                 Título:
                 <br><br><br>
-                Texto...
+                <h2 style="font-style: normal; font-weight: normal;font-size: 15px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate 
+                velit esse cillum dolore eu fugiat 
+                nulla pariatur...</h1>
+                <button class="boton" id="botonvermas">Ver más</button>
+                
             </div>
         </div>
-    <div class="contenedor" style="align-items: center; align-content: center;">
+    <div class="contenedor" id="contenedor2" style="align-items: center; align-content: center;">
         <div class="top1">
                 <div class="centrado">
                     Texto1...
@@ -37,12 +50,23 @@
         </div>
         
             <div class="botones">
-                <button class="boton"><span>Su vida</span></button>
-                <button class="boton"><span>Su obra</span></button>
-                <button class="boton boton-centro"><span>Su... </span></button> <!-- botón centrado -->
+                <button class="boton" id="vida"><span>Su vida</span></button>
+                <button class="boton" id="obra"><span>Su obra</span></button>
+                <button class="boton boton-centro" id="su"><span>Su... </span></button> <!-- botón centrado -->
             </div>
 
     </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <button id="cerrarModal" class="cerrar">&times;</button>
+            <h2 id="titulo"></h2>
+            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
     </div>
 </body>
 </html>
