@@ -49,20 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Cerrar el modal
-  cerrarBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    modal.style.animation = "fadeOut 0.5s";
-    modal.style.animationFillMode = "forwards";
-  });
 
-  // Opcional: cerrar haciendo clic fuera del contenido
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-        modal.style.animation = "fadeOut 0.5s";
-    }
-  });
 
 });
 
