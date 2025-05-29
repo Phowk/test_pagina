@@ -16,6 +16,7 @@
   </div>
     <p><a href="index.html" class="enlace-lista" style="font-size: 20px;"><< Regresar</a></p>
     <p style="font-size: 25px; text-align: left;"><strong>Acerca de la perspectiva política de Gustavo García Figueroa: </strong></p>
+    <p style="text-align: center;"><img src="gustavo.jpeg" width="150" height="150" alt="Gustavo García Figueroa" style="border-radius: 10%; object-fit: cover; object-position:top; width: 150px; height: 150px;"></p>
     <p>Gustavo Figueroa García se centra en la gobernabilidad, la consolidación de la paz y el fortalecimiento institucional. <br><br>
         Información sobre la perspectiva política de Gustavo García Figueroa:
     <div class="botoneslista">
@@ -51,28 +52,7 @@
         </div>
         <div class="contenido"><br><br><br></div>
         <button id="btnScrollTop" title="Ir arriba" style="display:none;"><img src="arriba.png" alt="arriba"></button>
-<script>
-  const btn = document.getElementById('btnScrollTop');
-  const regresar = document.querySelector('.enlace-lista');
+          <script src="index.js"></script>
 
-  function isOutOfView(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.bottom < 0;
-  }
-
-  window.addEventListener('scroll', function() {
-    if (isOutOfView(regresar)) {
-      btn.style.display = 'block';
-    } else {
-      btn.style.display = 'none';
-    }
-  });
-
-  btn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
 </body>
 </html>
-    </body>
-    </html>
