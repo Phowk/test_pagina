@@ -13,7 +13,7 @@ body {
 .fondo {
   position: relative;
   height: 50vh;
-  background: url('naturaleza.jpg') center/cover no-repeat;
+  background: url('naturaleza.webp') center/cover no-repeat;
 }
 
 .fondo::after {
