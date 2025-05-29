@@ -9,33 +9,28 @@
     </head>
     <body>
     <div class="fondo">
-        <h1 style="font-size: 40px;">La vida de Gustavo García Figueroa</h1>
-    </div>
-
-    
-    <div class="wrapper">
-        <div class="contenedor">
-        <div class="top">
-            <div class="titulo">Acerca de la vida de Gustavo García Figueroa: </div>
-            
-        </div>
-        <div class="contenido">Considerado un funcionario capaz, serio y transparente, 
-                    y una figura de relevancia para el departamento de Nariño. <br><br>Ver más sobre...</div>
-            <div class="botoneslista">
+    <h1>Gustavo García Figueroa</h1>
+    <h2>Senador de la República</h2>
+    <h3><i>La cara humana en el senado<br>
+            Mi prioridad: "La paz con servicio social"</i></h3>
+  </div>
+    <p><a href="index.html" class="enlace-lista" style="font-size: 20px;"><< Regresar</a></p>
+    <p style="font-size: 25px; text-align: left;"><strong>Acerca de la vida de Gustavo García Figueroa: </strong></p>
+    <p>Abogado constitucionalista con experiencia en Filosofía y Ciencias Políticas. Trayectoria en consultoría estratégica e investigación académica. <br><br>
+        Información sobre la vida de Gustavo García Figueroa:
+    <div class="botoneslista">
               <a href="#formacion" class="enlace-lista">Formación Académica</a>
               <a href="#experiencia" class="enlace-lista">Experiencia profesional</a>
               <a href="#datos" class="enlace-lista">Otros datos</a>
               <a href="#areas" class="enlace-lista">Áreas de Énfasis Profesional</a>
             </div>
+        </div>
+        <div class="contenido">
 
-        
-
-    </div>
-        <div class="contenedor" id="formacion">
+        <div id="formacion">
         <div class="top">
             <div class="titulo"><strong>Formación Académica:</strong></div>
         </div>
-        <div class="contenido">
             
             <ul>
             <li>Abogado.</li>
@@ -45,16 +40,14 @@
             <li>Formación en Filosofía y Ciencias Políticas.</li>
             </ul>
         </div>
-        <div id="extraInfo" style="display: none; margin-top: 10px;">
-    Aquí van los detalles adicionales de Gustavo García Figueroa.
-    </div>
+        
         </div>
-
-        <div class="contenedor" id="experiencia">
+        <div class="contenido">
+        <div id="experiencia">
         <div class="top">
             <div class="titulo"><strong>Experiencia profesional:</strong></div>
         </div>
-        <div class="contenido">
+        
             
             <ul>
             <li><strong>Ministro Encargado (E) del Interior:</strong> 
@@ -77,11 +70,10 @@
 
         <div class="contenido">
             
-        <div class="contenedor" id="datos">
+        <div id="datos">
         <div class="top">
             <div class="titulo"><strong>Otros datos:</strong></div>
         </div>
-        <div class="contenido">
             
             <ul>
             <li>Es un funcionario capaz, serio y transparente.</li>
@@ -90,15 +82,13 @@
             </ul>
         </div>
         </div>
-        </div>
 
         <div class="contenido">
             
-        <div class="contenedor" id="areas">
+        <div id="areas">
         <div class="top">
             <div class="titulo"><strong>Áreas de Énfasis Profesional:</strong></div>
         </div>
-        <div class="contenido">
             
             <ul>
               <li>Relaciones del Gobierno Nacional con la Rama Legislativa.</li>
@@ -112,7 +102,30 @@
             </ul>
         </div>
         </div>
-        </div>
-    </div>
+        </p>
+            <div class="contenido"><br><br><br></div>
+
+<button id="btnScrollTop" title="Ir arriba" style="display:none;"><img src="arriba.png" alt="arriba"></button>
+<script>
+  const btn = document.getElementById('btnScrollTop');
+  const regresar = document.querySelector('.enlace-lista');
+
+  function isOutOfView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.bottom < 0;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (isOutOfView(regresar)) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
     </body>
     </html>

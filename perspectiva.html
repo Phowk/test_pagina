@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+        <!DOCTYPE html>
     <html lang="es">
     <head>
     <meta charset="UTF-8">
@@ -9,30 +9,25 @@
     </head>
     <body>
     <div class="fondo">
-        <h1 style="font-size: 40px;">La perspectiva de Gustavo García Figueroa</h1>
-    </div>
-
-    
-    <div class="wrapper">
-        <div class="contenedor">
-        <div class="top">
-            <div class="titulo">Acerca de la perspectiva política de Gustavo García Figueroa: </div>
-            
-        </div>
-        <div class="contenido">Gustavo Figueroa García se centra en la gobernabilidad, la consolidación de la paz y el fortalecimiento institucional.<br><br>Ver más sobre...</div>
-            <div class="botoneslista">
+    <h1>Gustavo García Figueroa</h1>
+    <h2>Senador de la República</h2>
+    <h3><i>La cara humana en el senado<br>
+            Mi prioridad: "La paz con servicio social"</i></h3>
+  </div>
+    <p><a href="index.html" class="enlace-lista" style="font-size: 20px;"><< Regresar</a></p>
+    <p style="font-size: 25px; text-align: left;"><strong>Acerca de la perspectiva política de Gustavo García Figueroa: </strong></p>
+    <p>Gustavo Figueroa García se centra en la gobernabilidad, la consolidación de la paz y el fortalecimiento institucional. <br><br>
+        Información sobre la perspectiva política de Gustavo García Figueroa:
+    <div class="botoneslista">
               <a href="#enfoque" class="enlace-lista">Enfoque y prioridades</a>
               <a href="#orientacion" class="enlace-lista">Orientación Política</a>
             </div>
         </div>
-        
-            <iframe width="360" height="315" class="contenido" src="https://www.youtube.com/embed/fZYgjKFF4U8?si=MGl5ZMjYAcpIyVVp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
-            
-        <div class="contenedor" id="enfoque">
-        <div class="top">
-            <div class="titulo"><strong>Enfoque y prioridades:</strong></div>
-        </div>
         <div class="contenido">
+        <div class="top">
+            <div class="titulo" id="enfoque"><strong>Enfoque y prioridades:</strong></div>
+        </div>
+        
             
             <ul>
               <li><strong>Promoción de la democracia y participación ciudadana:</strong> Lidera políticas públicas dirigidas a la democracia y la participación ciudadana y comunal.</li>
@@ -42,13 +37,11 @@
               <li><strong>Diálogo y Participación:</strong> Ha demostrado capacidad de mediación en conflictos sociales, priorizando el diálogo. Además, promueve activamente la participación ciudadana y comunal.</li>
             </ul>
         </div>
-        </div>
-
-        <div class="contenedor" id="orientacion">
-        <div class="top">
-            <div class="titulo"><strong>Orientación Política:</strong></div>
-        </div>
         <div class="contenido">
+        <div class="top">
+            <div class="titulo" id="orientacion"><strong>Orientación Política:</strong></div>
+        </div>
+        
             Con una base en el liberalismo por su herencia política 
             (hijo del excongresista Guillermo García Realpe), 
             Figueroa García ha mostrado una apertura hacia diferentes 
@@ -56,8 +49,30 @@
             pragmático y técnico, enfocado en la construcción de acuerdos 
             y la eficiencia en la gestión pública.
         </div>
-        </div> 
-    </div>
+        <div class="contenido"><br><br><br></div>
+        <button id="btnScrollTop" title="Ir arriba" style="display:none;"><img src="arriba.png" alt="arriba"></button>
+<script>
+  const btn = document.getElementById('btnScrollTop');
+  const regresar = document.querySelector('.enlace-lista');
 
+  function isOutOfView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.bottom < 0;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (isOutOfView(regresar)) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
     </body>
     </html>

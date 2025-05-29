@@ -9,32 +9,25 @@
     </head>
     <body>
     <div class="fondo">
-        <h1 style="font-size: 40px;">La obra de Gustavo García Figueroa</h1>
-    </div>
-
-    
-    <div class="wrapper">
-        <div class="contenedor">
-        <div class="top">
-            <div class="titulo">Acerca de la obra de Gustavo García Figueroa: </div>
-            
-        </div>
-        <div class="contenido">Con una destacada trayectoria en el ámbito del Ministerio del Interior, 
-            donde ha ocupado roles clave y ha participado en procesos trascendentales para el país.<br><br>Ver más sobre...</div>
-            <div class="botoneslista">
+    <h1>Gustavo García Figueroa</h1>
+    <h2>Senador de la República</h2>
+    <h3><i>La cara humana en el senado<br>
+            Mi prioridad: "La paz con servicio social"</i></h3>
+  </div>
+    <p><a href="index.html" class="enlace-lista" style="font-size: 20px;"><< Regresar</a></p>
+    <p style="font-size: 25px; text-align: left;"><strong>Acerca de la obra de Gustavo García Figueroa: </strong></p>
+    <p>Con una destacada trayectoria en el ámbito del Ministerio del Interior, donde ha ocupado roles clave y ha participado en procesos trascendentales para el país. <br><br>
+        Información sobre la obra de Gustavo García Figueroa:
+    <div class="botoneslista">
               <a href="#logros" class="enlace-lista">Logros y reconocimientos</a>
-              <a href="#otros" class="enlace-lista">Cargos y roles importantes</a>
+              <a href="#cargos" class="enlace-lista">Cargos y roles importantes</a>
             </div>
         </div>
-        
-
-        
-            
-        <div class="contenedor" id="logros">
-        <div class="top">
-            <div class="titulo"><strong>Logros y reconocimientos:</strong></div>
-        </div>
         <div class="contenido">
+        <div class="top">
+            <div class="titulo" id="logros"><strong>Logros y reconocimientos:</strong></div>
+        </div>
+        
             
             <ul>
               <li><b>Personaje Cívico del Departamento de Nariño</b> (año 2000).</li>
@@ -47,13 +40,11 @@
               <li><b>Primer Lugar en el Concurso Municipal de Periodismo “Silvio León España”</b> (2009).</li>
             </ul>
         </div>
-        </div>
-
-        <div class="contenedor" id="otros">
-        <div class="top">
-            <div class="titulo"><strong>Cargos y roles importantes:</strong></div>
-        </div>
         <div class="contenido">
+        <div class="top">
+            <div class="titulo" id="cargos"><strong>Cargos y roles importantes:</strong></div>
+        </div>
+        
             
             <ul>
             <li>Asesor del equipo negociador que logró la firma del Acuerdo de Paz con las FARC.</li>
@@ -66,12 +57,30 @@
             </ul>
         </div>
         </div>
-        
+                <div class="contenido"><br><br><br></div>
 
-            
-        </div>
+        <button id="btnScrollTop" title="Ir arriba" style="display:none;"><img src="arriba.png" alt="arriba"></button>
+<script>
+  const btn = document.getElementById('btnScrollTop');
+  const regresar = document.querySelector('.enlace-lista');
 
-        </div>
-        </div>
+  function isOutOfView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.bottom < 0;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (isOutOfView(regresar)) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
     </body>
     </html>
+        
